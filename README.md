@@ -12,7 +12,7 @@ Developer analytics platform for tracking coding performance and growth — log 
 - **Heatmap** — 365-day activity calendar, color-coded from "cold" (no activity) to "hot" (peak activity) — the app's signature visual
 - **Stats overview** — total solved, difficulty breakdown, last-30-days activity
 
-## Project structure
+## Planned project structure
 
 ```
 leet-heat/
@@ -38,12 +38,14 @@ leet-heat/
 └── docker-compose.yml  local Postgres
 ```
 
-## Getting started
+## Local setup (once the app source is available)
+
+This repository currently includes the project plan and Compose configuration. The backend and frontend source directories are not checked in yet. You can start the database on its own using the command below.
 
 ### 1. Database
 
 ```bash
-docker compose up -d
+docker compose up -d db
 ```
 
 This starts Postgres on `localhost:5432` with db `leetheat` / user `leetheat` / password `leetheat`.
